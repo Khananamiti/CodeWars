@@ -1,0 +1,14 @@
+//https://www.codewars.com/kata/546f922b54af40e1e90001da
+
+function alphabetPosition(text) {
+  const string = text.toLowerCase();
+  let str = "";
+  for (let i = 0; i < string.length; i++) {
+    const char = string[i];
+    const code = char.charCodeAt() - 96;
+    if (code >= 1 && code < 27){
+      str += code + " ";
+    }
+  }
+  return str.trim();
+}
